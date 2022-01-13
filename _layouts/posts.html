@@ -1,0 +1,53 @@
+---
+layout: default
+comments: true
+---
+<nav class="uk-navbar-container uk-navbar-default" uk-navbar>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="konten.html">Konten</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="uk-section uk-section-muted">
+    <div class="uk-container">
+        <div class="uk-text-warning">{{ page.categories | join: ", "}}</div>
+        <h1 class="uk-margin-remove uk-text-bold">{{ page.title }}</h1>
+        <div class="uk-margin-small">
+            <h5 class="uk-text-middle uk-text-muted uk-text-small">Irema | {{ page.date | date: "%A" }}, {{ page.date | date_to_long_string }}</h5>
+        </div>
+        <p class="uk-text-justify">{{ content }}</div>
+    <div class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <h3>Artikel Lainnya</h3>
+            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid>
+                {% for unggah in site.posts | sort: "date" | reverse | limit: 3 %}
+                <div>
+                    <div class="uk-card uk-card-hover uk-card-small uk-border-rounded">
+                        <div class="uk-card-media-top">
+                            <img class="uk-border-rounded" src="/assets/img/Forza3.jpg" alt="">
+                            <canvas width="200" height="10"></canvas>
+                        </div>
+                        <div class="uk-card-body uk-text-left">
+                            <h4 class="uk-margin-remove uk-text-bold">{{ unggah.title }}</h4>
+                            <div class="uk-margin-small">
+                                <img src="https://img.icons8.com/material-rounded/24/000000/user-male-circle.png"/>
+                                <span class="uk-text-middle uk-text-muted uk-text-small">Irema</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-section uk-section-default">
+        <div class="uk-container">
+            <h3>Komentar</h3>
+            <div class="fb-comments" data-href="{{ site.url | absolute_url }}" data-width="100%" data-numposts="5" style="font-size: 1.25vw;"></div>
+        </div>
+    </div>
+</div>

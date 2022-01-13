@@ -1,0 +1,600 @@
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    .main {
+        width: 90%;
+    }
+    .window-post {
+        flex-direction: column;
+    }
+    .kepala {
+        height: 100%;
+        padding-bottom: 2vw;
+    }
+    .control-main {
+        height: auto;
+    }
+    html, body {
+        height: 100%;
+        width: auto;
+    }
+    .navi {
+        display: none;
+    }
+    .navig {
+        display: flex;
+        font-family: 'Raleway', sans-serif;
+        overflow: hidden;
+        background-color:black;
+    }
+    .navig a {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1.5vw 1.3vw;
+        text-decoration: none;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-size: 3vw;
+    }
+    #carig {
+        display: none;
+    }
+    .tanggal {
+        width: 10%;
+        float: left;
+        padding: 2vw 2vw;
+        background-color: rgb(49, 161, 246);
+        text-align: center;
+    }
+    .tanggal h3 {
+        font-size: 3vw;
+    }
+    .judulpos {
+        width: 90%;
+        float: left;
+        line-height: 3vw;
+        padding-top: 0vw;
+        padding-left: 1vw;
+        padding-bottom: 1vw;
+        padding-right: 1vw; 
+        /*background-color: rgb(35, 37, 39);*/ 
+        border-bottom: thin solid black;
+    }
+    .judulpos p {
+        font-size: 3vw;
+        line-height: 3.5vw;
+        text-align: justify;
+    }
+    .judulpos h2 {
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    .judulpos h6 {
+        font-size: 2vw;
+        line-height:4vw;
+        color: rgb(49, 161, 246);
+    }
+    #judul {
+        font-size: 10vw;
+        color: white;
+        text-align: center;
+    }
+    #subjudul {
+        font-family: 'Sacramento', cursive;
+        font-size: 5vw;
+        padding-top: 0.2vw;
+        color: white;
+        text-align: center;
+        padding-bottom: 1.4vw;
+    }
+    /*Postingan*/
+    #judul-post {
+        max-width: inherit;
+        text-align: left;
+        line-height: 3.3vw;
+        display: block;
+    }
+    #judul-post h1 {
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+    #judul-post h6 {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    #isi-post {
+        max-width: inherit;
+        padding-top: 2vw;
+        text-align: justify;
+        display: block;
+    }
+    #komen-pos {
+        margin-top: 1vw;
+        width: 100%;
+    }
+    
+    /*Format Postingan*/
+    #isi-post {
+        font-size: 3vw;
+    }
+    #isi-post img, figure {
+        max-width: 100%;
+    }
+    #komen-pos {
+        font-size: 1.25vw;
+    }
+    #isi-post h1 {
+        font-size: 6vw;
+    }
+    #isi-post h2 {
+        font-size: 5vw;
+    }
+    #isi-post h3 {
+        font-size: 4.4vw;
+    }
+    #isi-post h4 {
+        font-size: 4vw;
+    }
+    #isi-post h5 {
+        font-size: 3.66vw;
+    }
+    #isi-post h6 {
+        font-size: 3.3vw;
+    }
+    .recent-post li {
+        font-size: 3vw;
+    }
+    .recent-post h1 {
+        font-size: 6vw;
+    }
+}
+@media screen and (min-width: 901px) {
+    #carig {
+        display: none;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    .main {
+        width: 60%;
+    }
+    .window-post {
+        flex-direction: row;
+    }
+    .kepala {
+        height: 100%;
+    }
+    .control-main {
+        min-height: 100%;
+    }
+    .navi {
+        font-family: 'Raleway', sans-serif;
+        overflow: hidden;
+        /* background-color:rgb(8, 37, 65);*/
+        background-color: transparent;
+        font-size: 1.5vw;
+    }
+    .navi a {
+        float:left;
+        display: block;
+        padding: 1.5vw 1.3vw;
+        text-decoration: none;
+        color: white;
+    }
+    .navig {
+        display: none;
+    }
+    .tanggal {
+        width: 20%;
+        float: left;
+        padding: 2vw 2vw;
+        background-color: rgb(49, 161, 246);
+        text-align: center;
+    }
+    .tanggal h3 {
+        font-size: 3vw;
+    }
+    .judulpos {
+        width: 80%;
+        float: left;
+        line-height: 3vw;
+        padding-top: 0vw;
+        padding-left: 1vw;
+        padding-bottom: 1vw;
+        padding-right: 1vw; 
+        /*background-color: rgb(35, 37, 39);*/ 
+        border-bottom: thin solid black;
+        font-size: 1.5vw;
+    }
+    .judulpos p {
+        line-height: 2vw;
+        text-align: justify;
+    }
+    .judulpos h2 {
+        font-size: 3vw;
+        line-height: 3.3vw;
+    }
+    #judul {
+        font-size: 6vw;
+        color: white;
+        text-align: center;
+    }
+    #subjudul {
+        font-family: 'Sacramento', cursive;
+        font-size: 3vw;
+        padding-top: 0.2vw;
+        color: white;
+        text-align: center;
+        padding-bottom: 1.4vw;
+    }
+    /*Postingan*/
+    #judul-post {
+        max-width: inherit;
+        text-align: left;
+        line-height: 3.3vw;
+        display: block;
+    }
+    #judul-post h1 {
+        font-size: 3.5vw;
+        line-height: 3.5vw;
+    }
+    #judul-post h6 {
+        line-height: 1.5vw;
+    }
+    #isi-post {
+        max-width: inherit;
+        padding-top: 2vw;
+        text-align: justify;
+        display: block;
+    }
+    #komen-pos {
+        margin-top: 1vw;
+        width: 100%;
+    }
+    
+    /*Format Postingan*/
+    #isi-post {
+        font-size: 1.25vw;
+    }
+    #isi-post img, figure {
+        max-width: 100%;
+    }
+    #komen-pos {
+        font-size: 1.25vw;
+    }
+    .recent-post li {
+        font-size: 1.5vw;
+    }
+}
+
+/* Default Selector */
+* {
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+}
+h1 {
+    font-size: 2.5vw;
+}
+h2 {
+    font-size: 2vw;
+}
+h3 {
+    font-size: 1.67vw;
+}
+h4 {
+    font-size: 1.5vw;
+}
+h5 {
+    font-size: 1.33vw;
+}
+h6 {
+    font-size: 1.17vw;
+}
+
+/* Top Navigation */
+#cari {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.navi a:hover {
+    background-color: rgb(6, 27, 47);
+}
+.cari {
+    font-family: 'Raleway', sans-serif;
+    float: right;
+    justify-content: center;
+    /*padding: 0.8vw 1.3vw;*/
+    width: 20%;
+    background-color: transparent;
+}
+.cari button {
+    border: 0px solid;
+    background-color: rgb(12, 46, 78);
+    width: auto;
+    height: 3.4vw;
+    color: white;
+}
+.cari input[type="text"] {
+    background-image: url('/assets/img/searchitam.png');
+    background-repeat: no-repeat;
+    background-position: 0.6vw center;
+    background-size: 9%;
+    padding-top: 3%;
+    padding-left: 15%;
+    padding-bottom: 3%;
+    border: 0px solid transparent;
+    height: auto;
+}
+
+/* Header */
+.kepala {
+    font-family: 'Raleway', sans-serif;
+    background: url('/assets/img/bg.jpg') no-repeat center fixed;
+    background-size: cover;
+    /*max-width: 100%;
+    height: auto;
+    background-color:rgb(8, 37, 65);
+    padding: 2vw;
+    margin-bottom: 1.5vw; */
+}
+#konten-kepala {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.kepala a {
+    text-decoration: none;
+}
+.kepala a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+.kepala a:hover {
+    opacity: 0.3;
+}
+.flex-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex-img a:hover {
+    opacity: 0.5;
+}
+.flex-img img{
+    max-width: 4vw;
+    padding-left: 1vw;
+}
+
+/* Main Content */
+.control-main {
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+    color: white;
+    padding-top: 0.75%;
+}
+.control-main h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-bottom: 0.5%;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+.main {
+    justify-content: left;
+    align-items: left;
+    padding-top: 2%;
+}
+.main a {
+    text-decoration: none;
+    color: white;
+} 
+.main a:link, a:visited {
+    text-decoration: none;
+    justify-content: center;
+}
+.main a:hover {
+    color : rgb(8, 37, 65);
+}
+
+/* Postingan */
+#dekor-kontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 2vw;
+    height: 1vw;
+}
+.dekor-kontaine {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    height: 1vw;
+    width: 100%;
+}
+#d-1 {
+    width:25%;
+    color: transparent;
+    background-color: rgb(231, 37, 37);
+}
+#d-2 {
+    width:45%;
+    color: transparent;
+    background-color: rgb(0, 66, 128);
+}
+#d-3 {
+    width:30%;
+    color: transparent;
+    background-color: rgb(17, 146, 13);
+}
+.window-post {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    padding: 1vw 1vw 1vw 1vw;
+    background-color: black;
+}
+.grid-col-1 {
+    flex: 2.5%;
+    width: 100%;
+}
+.grid-col-2 {
+    flex: 2.5%;
+    width: 100%;
+}
+.grid-col-3 {
+    flex: 2.5%;
+    width: 100%;
+}
+.main-post {
+    flex: 60%;
+    max-width: 100%;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: white;
+}
+
+#dekor-container {
+    display: flex;
+    width: 18%;
+    height: 5px;
+    flex-direction: row;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+#warna-1 {
+    flex: 20%;
+    background-color: indigo;
+}
+#warna-2 {
+    flex: 40%;
+    background-color: gold;
+}
+#warna-3 {
+    flex: 20%;
+    background-color: maroon;
+}
+
+/* Recent Post Side Bar*/
+
+.recent-post {
+    flex: 30%;
+    color: white;
+}
+.recent-post h1 {
+    width: 100%;
+    background-color: teal;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-align: center;
+}
+
+.recent-post ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 0;
+    text-align: justify;
+}
+.recent-post li {
+    margin-top: 0.2vw;
+    text-align: left;
+    width: 100%;
+    background-color: teal;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: justify;
+}
+.recent-post a {
+    text-decoration: none;
+    color: white;
+    text-align: justify;
+    
+}
+.recent-post li:hover {
+    background-color: black;
+}
+
+/* Pagination */
+.laman {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1vw 1vw;
+    color: white;
+}
+.pg {
+    font-size: 1vw;
+    padding: 1vw 1vw 1vw 1vw;
+    margin: 0.5vw 0.5vw;
+    background-color: rgb(8, 37, 65);
+}
+
+.pg a {
+    color: white;
+    text-decoration: none;
+}
+
+.pg a:hover {
+    color: black;
+}
+.pg:hover {
+    background-color: white;
+    color: black;
+}
+.pg:hover a {
+    color: black;
+}
+
+
+/* Footer */
+footer {
+    color: white;
+    background-color: black;
+    /*background-color:rgb(8, 37, 65);*/
+    font-size: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.cir-flex-contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.circl {
+    height: 1vw;
+} 
+.circle {
+    flex-wrap: wrap;
+    margin-left: 1vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+}
+.dekor-bulet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
