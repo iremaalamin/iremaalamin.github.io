@@ -20,8 +20,8 @@ layout : default
                         <h2 class="uk-text-center">Menu</h2>
                         <ul class="uk-nav uk-nav-default">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="artikel.html">Artikel</a></li>
-                            <li><a href="aboutus.html">Tentang kita</a></li>
+                            <li><a href="index.html">Artikel</a></li>
+                            <li><a href="tentang">Tentang kita</a></li>
                         </ul>
                 
                     </div>
@@ -42,10 +42,10 @@ layout : default
                 <a class="uk-link-reset" href="{{ post.url }}">
                     <div class="uk-card uk-card-hover uk-card-small uk-border-rounded">
                         <div class="uk-card-media-top">
-                            <img class="uk-border-rounded" src="/assets/img/k3.png" alt="">
+                            <img class="uk-border-rounded" src="{{ post.thumbnail }}" alt="">
                         </div>
                         <div class="uk-card-body uk-text-left">
-                            <div class="uk-text-warning">Tahfidz</div>
+                            <div class="uk-text-warning">{{ post.categories | join: ", " }}</div>
                             <h4 class="uk-margin-remove uk-text-bold">{{ post.title }}</h4>
                             <div class="uk-margin-small">
                                 <img src="https://img.icons8.com/material-rounded/24/000000/user-male-circle.png"/>
