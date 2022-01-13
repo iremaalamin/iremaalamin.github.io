@@ -1,13 +1,12 @@
 ---
 layout: default
-comments: true
 ---
 <nav class="uk-navbar-container uk-navbar-default" uk-navbar>
     <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="konten.html">Konten</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="{{ site.url | absolute_url }}">Home</a></li>
+            <li><a href="{{ site.url | absolute_url }}">Artikel</a></li>
+            <li><a href="/tentang/">Tentang kita</a></li>
         </ul>
     </div>
 </nav>
@@ -34,7 +33,7 @@ comments: true
                             <h4 class="uk-margin-remove uk-text-bold">{{ unggah.title }}</h4>
                             <div class="uk-margin-small">
                                 <img src="https://img.icons8.com/material-rounded/24/000000/user-male-circle.png"/>
-                                <span class="uk-text-middle uk-text-muted uk-text-small">Irema</span>
+                                <span class="uk-text-middle uk-text-muted uk-text-small">{{ unggah.author }}</span>
                             </div>
                         </div>
                     </div>

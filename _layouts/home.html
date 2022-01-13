@@ -5,7 +5,7 @@ layout : default
     <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle uk-overflow-hidden" style="background-image: url(/assets/img/masjid.jpg);">
         <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
             <p class="uk-margin-remove-buttom" style="color: #ffffff;"><span style="background-color: rgba(0, 0, 0, 0.3);">I R E M A</span></p>
-            <h1 class="uk-margin-remove-top" style="color: #ffffff;"><span style="background-color: rgba(0, 0, 0, 0.3);">Ikatan Remaja Masjid Al-Amin</span></h1>
+            <a href="{{ site.url | absolute_url }}"><h1 class="uk-margin-remove-top" style="color: #ffffff;"><span style="background-color: rgba(0, 0, 0, 0.3);">Ikatan Remaja Masjid Al-Amin</span></h1></a>
             <p style="color: #ffffff;"><span style="background-color: rgba(0, 0, 0, 0.3);">Masjid Al-Amin, Kp. Gentong, RT/RW 001/001, Desa Margamulya, Kec. Sukaresik, Kab. Tasikmalaya</span></p>
         </div>
     </div>
@@ -19,9 +19,9 @@ layout : default
                     <div class="uk-offcanvas-bar">
                         <h2 class="uk-text-center">Menu</h2>
                         <ul class="uk-nav uk-nav-default">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="index.html">Artikel</a></li>
-                            <li><a href="tentang">Tentang kita</a></li>
+                            <li><a href="{{ site.url | absolute_url }}">Home</a></li>
+                            <li><a href="{{ site.url | absolute_url }}">Artikel</a></li>
+                            <li><a href="/tentang/">Tentang kita</a></li>
                         </ul>
                 
                     </div>
@@ -58,30 +58,29 @@ layout : default
             {% endfor %}
         </div>
     </div>
-</div>
-{% if paginator.total_pages > 1 %}
-    <div class="laman">
-        {% if paginator.previous_page %}
-        <div class="pg"><a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a></div>
-        {% else %}
-        <div class="pg">&laquo; Prev</div>
-        {% endif %}
-
-        {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-            <div class="pg">{{ page }}</div>
-            {% elsif page == 1 %}
-            <div class="pg"><a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a></div>
+    {% if paginator.total_pages > 1 %}
+        <ul class="uk-pagination uk-flex-center" uk-margin>
+            {% if paginator.previous_page %}
+            <li><a href="{{ paginator.previous_page_path | relative_url }}"><span uk-pagination-previous></span></a></li>
             {% else %}
-            <div class="pg"><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></div>
+            <li><span uk-pagination-previous></span></li>
             {% endif %}
-        {% endfor %}
-        
-        {% if paginator.next_page %}
-        <div class="pg"><a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a></div>
-        {% else %}
-        <div class="pg">Next &raquo;</div>
-        {% endif %}
-    </div>
-{% endif %}
+
+            {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <li>{{ page }}</li>
+                {% elsif page == 1 %}
+                <li><a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a></li>
+                {% else %}
+                <li><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
+                {% endif %}
+            {% endfor %}
+            
+            {% if paginator.next_page %}
+            <li><a href="{{ paginator.next_page_path | relative_url }}"><span uk-pagination-next></span></a></li>
+            {% else %}
+            <li><span uk-pagination-next></span></li>
+            {% endif %}
+        </ul>
+    {% endif %}
 </div>
