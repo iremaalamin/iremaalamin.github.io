@@ -14,9 +14,9 @@ Insyaallah pada kesempatan ini, saya sebagai perwakilan dari tim Informatika unt
 
 1. Silakan untuk mengakses <https://iremaalamin.github.io/admin/>\
 2. Pada tengah layar akan terdapat tombol login. Anda akan diarahkan untuk login ke situs github. Untuk akun email dan password nya akan diberikan kepada pengurus.\
-3. Setelah itu, teman-teman hanya tinggal klik new Blog.
+3. Setelah itu, teman-teman hanya tinggal klik new Artikel.
 
-![cara membuat artikel](/assets/img/posts/screenshot-2022-01-13-192044.png)
+![cara membuat artikel](/assets/img/posts/screenshot-2022-01-16-210705.png)
 
 4. Setelah itu, teman-teman hanya tinggal menulis isi form-form yang tersedia seperti author, judul, gambar thumbnail, sampai artikel yang akan ditulis.
 
